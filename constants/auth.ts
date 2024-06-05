@@ -19,6 +19,7 @@ const userConfig: AuthProviderProps = {
   redirect_uri: REDIRECT_URI,
   response_type: "code",
   automaticSilentRenew: true,
+  scope: "openid profile email offline_access",
   accessTokenExpiringNotificationTimeInSeconds: 5 * 60,
   silent_redirect_uri: `${REDIRECT_URI}/auth/silent-renew`,
   loadUserInfo: true,
